@@ -1,0 +1,81 @@
+body {
+    background-color:lightgray;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(media/annie-spratt-CEvqxP1yubE-unsplash.jpg);
+    background-size:1200px;
+    height:100%;
+}
+
+nav {
+ 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:maroon;
+    z-index:9;
+}
+
+ul {
+    text-align: center;
+    
+}
+
+li {
+    display: inline-block;
+    top: 20px;
+    padding: 0px 70px;
+    color: whitesmoke;
+    background-color: maroon;
+    text-transform: lowercase;
+    font-size: 40px;
+    height: 100%
+}
+
+li:hover {
+    color:#6898a3;
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+    background-color:maroon;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    z-index:9;
+}
+
+.container {
+    width:auto;
+    margin: 0px 200px;
+    height:100%;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.head_img {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top:50px;
+}
+
+.welcome_pic_left {
+    display:flex;
+    position:absolute;
+    top:320px;
+    padding-left: 60px;
+}
+
+.welcome_pic_right {
+    position:relative;
+    display:flex;
+    justify-content: right;
+    top:20px;
+    padding-right: 60px;
+}
