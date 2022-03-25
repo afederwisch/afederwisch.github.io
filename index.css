@@ -33,9 +33,14 @@ body {
         color: whitesmoke;
         background-color: maroon;
         text-transform: lowercase;
-        font-size: 50px;
+        font-size: 70px;
     }
-    
+
+    .dropdown-container {
+        display: flex;
+        justify-content: flex-end;
+        background-color:maroon;
+    }
 }
 
 @media only screen and (min-width: 481px) {
@@ -48,18 +53,27 @@ body {
         padding:18px;
     }
 
+    ul {
+        text-align: center;
+    }
 
+    li {
+        display: inline-block;
+        padding: 0px 70px;
+        color: whitesmoke;
+        background-color: maroon;
+        text-transform: lowercase;
+        font-size: 50px;
+    }
 
     li:hover {
         color:#6898a3;
     }
+
     .dropdown {
         display: none;
     }
       
-    .dropdown-content {
-        display: none;
-    }
 }
 
 .container {
