@@ -1,6 +1,21 @@
 <!doctype HTML>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width">
+    <script>
+        $(document).ready( function(){
+
+            $('#submenu').click( function(event){
+                event.stopPropagation();
+                $('#drop').toggle();
+            });
+
+            $(document).click( function(){
+                $('#drop').hide();
+            });
+
+        });
+    </script>
     <title>Hutton // Federwisch Wedding</title>
     <link href="index.css" rel="stylesheet">
     <style>
@@ -15,9 +30,19 @@
             <li><img src="media/info-free-icon-font.png" height="30"> Event Details</li>
             <li><img src="media/envelope-free-icon-font.png" height="30"> RSVP</li>
             <li><img src="media/gift-free-icon-font.png" height="30"> Registry</li>
-            <li></li>
         </ul>
     </nav>
+
+    <div class="dropdown">
+        <a href="#" id = "submenu"><img src="media/list-free-icon-font.png"></a>
+        <ul id = "drop">
+            <li><img src="media/rings-wedding-free-icon-font.png" height="30"> About Us</li>
+            <li><img src="media/info-free-icon-font.png" height="30"> Event Details</li>
+            <li><img src="media/envelope-free-icon-font.png" height="30"> RSVP</li>
+            <li><img src="media/gift-free-icon-font.png" height="30"> Registry</li>
+        </ul>
+    </div>
+
     <div class="container">
         <div class="welcome">more information coming soon -- watch this space!</div>
         <div class="head_img"><img src="media/Monogram8_C_FRT.png" height="700"></div>
