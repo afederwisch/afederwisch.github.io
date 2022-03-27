@@ -8,108 +8,96 @@ html, body {
 }
 
 body {
-    background-color:lightgray;
+    background-color: whitesmoke;
     font-family: 'Raleway', sans-serif;
-    background-image: url(media/annie-spratt-CEvqxP1yubE-unsplash.jpg);
-    background-size:1200px;
     height: 100vh;
     width: 100vw;
 }
 
-
-
-@media only screen and (max-width: 480px) {
-    nav {
-        display:none;
-    }
-
-    ul {
-        text-align: center;
-    }
-
-    li {
-        display: block;
-        padding: 0px 70px;
-        color: whitesmoke;
-        background-color: maroon;
-        text-transform: lowercase;
-        font-size: 70px;
-    }
-
-    .dropdown-container {
-        display: flex;
-        justify-content: flex-end;
-        background-color:maroon;
-    }
+img {
+    width:100%;
 }
 
-@media only screen and (min-width: 481px) {
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color:maroon;
-        z-index:9;
-        padding:18px;
-    }
+a {
+    color:#b6d0d1;
+    text-decoration: none;
+}
 
-    ul {
-        text-align: center;
-    }
+a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
+}
 
-    li {
-        display: inline-block;
-        padding: 0px 70px;
-        color: whitesmoke;
-        background-color: maroon;
-        text-transform: lowercase;
-        font-size: 50px;
-    }
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color:#592623;
+    z-index:9;
+    border: 1px solid #592623;
+    font-weight: bold;
+    flex-shrink: 1;
+}
 
-    li:hover {
-        color:#6898a3;
-    }
+ul {
+    text-align: center;
+}
 
-    .dropdown {
-        display: none;
-    }
-      
+li {
+    display: inline-table;
+    margin: 5px 10px;
+    padding: 10px 1px;
+    width:200px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.nav_items {
+    font-size:16px;
+    padding:0;
+    margin:0;
+}
+
+li:hover {
+    color:whitesmoke;
+    background-color:#b1bca0;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
 }
 
 .container {
+    position:relative;
     display:flex;
-    width:auto;
-    margin: 0px 100px;
-    height:100%;
-    bottom: 0;
-    background-color: white;
+    justify-content: center;
+    top:150px;
+
 }
 
-.welcome {
-    justify-content: center;
-    position: relative;
-    top:180px;
-    color:maroon;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    z-index:8;
+.title_card {
+    flex-shrink: 1; 
 }
 
-.head_img {
-    justify-content: center;
-    position: relative;
-    top:100px;
-}
 
 footer {
     position: fixed;
     padding: 15px 0;
     bottom: 0;
     width: 100%;
-    background-color:maroon;
+    background-color:#592623;
     color:whitesmoke;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
+    font-weight:bold;
     z-index:9;
 }
