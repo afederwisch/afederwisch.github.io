@@ -1,31 +1,44 @@
 <!doctype HTML>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hutton // Federwisch Wedding</title>
     <link href="index.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
         @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
     </style>
+    <script>
+        function myFunction () {
+            let x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><i class="fi fi-rs-rings-wedding"></i><br><p class="nav_items">About Us</p></li>
-            <li><i class="fi fi-rs-info"></i><br><p class="nav_items">Event Details</p></li>
-            <li><i class="fi fi-rs-envelope-plus"></i><br><p class="nav_items">RSVP</p></li>
-            <li><i class="fi fi-rs-gift"></i><br><p class="nav_items">Registry</p></li>
-        </ul>
+    <nav class="nav" id="nav">
+        <a class="active" href="#"><i class="fi fi-rs-home"></i><br><p class="nav_items">Home</p></a>    
+        <a href="#"><i class="fi fi-rs-rings-wedding"></i><br><p class="nav_items">About Us</p></a>
+        <a href="#"><i class="fi fi-rs-info"></i><br><p class="nav_items">Event Info</p></a>
+        <a href="#"><i class="fi fi-rs-envelope-plus"></i><br><p class="nav_items">RSVP</p></a>
+        <a href="#"><i class="fi fi-rs-gift"></i><br><p class="nav_items">Registry</p></a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="myFunction()">
+            <i class="fi fi-rs-list"></i>
+          </a>
     </nav>
     <div class="container">
         <div class="title_card"><img src="media/TITLE_CARD.png"></div>
+        <div class="end_of_content">
+            <p>Web design and development by Ashley Federwisch<br>
+            Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
+            Stock Images by <a class="link" href="https://www.vecteezy.com/free-vector/nature">Vecteezy</a></p>
+        </div>
     </div>
-    <footer>
-        Web design and development by Ashley Federwisch<br>
-        Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a><br>
-        Stock Images by <a href="https://www.vecteezy.com/free-vector/nature">Vecteezy</a>
-    </footer>
 </body>
 </html>
