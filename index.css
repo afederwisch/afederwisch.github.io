@@ -61,8 +61,19 @@ h3 {
     margin:15px;
 }
 
+
+
 .home_p {
     margin:15px;
+    text-align: justify;
+    padding:10px;
+}
+
+@media screen and (min-width: 1300px) {
+    .home_p {
+        text-align:center;
+    }
+
 }
 
 strong {
