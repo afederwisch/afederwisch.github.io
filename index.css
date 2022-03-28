@@ -35,7 +35,7 @@ a.link:hover {
 
 nav {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     background-color:#592623;
     z-index:9;
     font-weight: bold;
@@ -48,16 +48,37 @@ nav a {
     text-decoration: none;
 }
 
+h1 {
+    text-transform:uppercase;
+    margin:15px;
+}
+
+h2 {
+    margin:15px;
+}
+
+h3 {
+    margin:15px;
+}
+
+.home_p {
+    margin:15px;
+}
+
+strong {
+    color:#592623;
+}
+
 @media screen and (min-width: 481px) {
     nav a {
-        width: 110px;
-        font-size: 20px;
-        border-radius: 10px 10px 0 0;
-        margin: 10px 10px 0 10px;
+        width: 210px;
+        font-size: 25px;
+        border-radius: 10px;
+        margin: 10px;
         padding: 5px;
     }
     .nav_items {
-        font-size:16px;
+        font-size:25px;
         padding:0;
         margin:0;
     }
@@ -145,12 +166,12 @@ nav a {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    top:50px;
+    top:20px;
 
 }
 
 .title_card {
-    max-width: 800px;
+    max-width: 600px;
     flex-shrink: 1; 
     margin-left: auto;
     margin-right: auto;
@@ -159,13 +180,19 @@ nav a {
 
 .home_content {
     display:flex;
-    flex-direction: row;
-    margin: 0 200px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#us_home {
-    max-width: 400px;
+.home_text_container {
+    text-align: center;
 }
+
+.bx-wrapper {
+    display: table;
+    margin: 0 auto;
+  }
 
 .end_of_content {
     font-size: 12px;

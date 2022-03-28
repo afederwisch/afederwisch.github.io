@@ -8,6 +8,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
         @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: true,
+            slideWidth: 320
+          });
+        });
+      </script>
     <script>
         function openNav () {
             let x = document.getElementById("nav");
@@ -40,12 +55,28 @@
     </nav>
     <div class="container">
         <div class="home_content">
-            <img id="us_home" src="media/C96EED26-9879-4C67-A420-BE2509C1520B[6599].JPG">
-            <img id="us_home" src="media/C96EED26-9879-4C67-A420-BE2509C1520B[6599].JPG">
+            <div class="home_text_container">
+                <h1>We're (<strong>finally</strong>) getting married!</h1>
+                <h2>Ceremony and reception to be held at <em>A Simple Affair</em> in Las Vegas, Nevada</h2>
+                <h3>28 October 2022</h3>
+                <p class="home_p">Welcome to our wedding website, which was lovingly created by the bride-to-be as an interactive way to share all of the important details with our friends and loved ones.<br>
+                    Please feel free to explore the site, check out important information regarding the main event, and don't forget to RSVP.
+                    We can't wait to celebrate this special day with you!
+                </p>
+            </div>
+            <div class="slider">
+                <div><img src="media/slideshow/1.JPG" title="October 2019 - Honolulu (The Proposal Trip)"></div>
+                <div><img src="media/slideshow/2.JPG" title="December 2021 - Patrick's 28th Birthday"></div>
+                <div><img src="media/slideshow/3.JPG" title="July 2015 - Disneyland Trip"></div>
+                <div><img src="media/slideshow/4.JPG" title="March 2022 - Golden Knights Game"></div>
+                <div><img src="media/slideshow/5.JPG" title="October 2021 - Maui Trip"></div>
+                <div><img src="media/slideshow/6.JPG" title="Halloween 2014"></div>
+            </div>
         </div>
         <div class="end_of_content">
             <p>Web design and development by Ashley Federwisch<br>
             Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
+            Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
             <!-- Stock Images by <a class="link" href="https://www.vecteezy.com/free-vector/nature">Vecteezy</a></p> -->
         </div>
     </div>
