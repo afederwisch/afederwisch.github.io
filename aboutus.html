@@ -1,0 +1,86 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hutton // Federwisch Wedding - About Us</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
+        @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: false,
+            slideWidth: 320
+          });
+        });
+      </script>
+    <script>
+        function openNav () {
+            let x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="title_card"><img src="media/TITLE_CARD.png"></div>
+    </header>
+    <nav class="nav" id="nav">
+        <a href="index.html"><i class="fi fi-rs-home"></i><br><p class="nav_items">Home</p></a>    
+        <a class="active" href="#"><i class="fi fi-rs-rings-wedding"></i><br><p class="nav_items">About Us</p></a>
+        <a href="#"><i class="fi fi-rs-info"></i><br><p class="nav_items">Event Info</p></a>
+        <a href="#"><i class="fi fi-rs-envelope-plus"></i><br><p class="nav_items">RSVP</p></a>
+        <a href="#"><i class="fi fi-rs-gift"></i><br><p class="nav_items">Registry</p></a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="openNav()">
+            <i class="fi fi-rs-list"></i>
+          </a>
+          <a href="javascript:void(0);" class="close_menu_icon" onclick="openNav()">
+            <i class="fi fi-rs-cross-circle"></i>
+          </a>
+    </nav>
+    <div class="container">
+        <div class="home_content">
+            <div class="home_text_container">
+                <h1>The Bride</h1>
+                <div class="slider">
+                    <div><img src="media/aboutus/a/IMG_5542.JPG"></div>
+                    <div><img src="media/aboutus/a/IMG_1568.jpg"></div>
+                    <div><img src="media/aboutus/a/ash_ino.JPG"></div>
+                </div>
+                <p class="content_paragraph">
+                    Ashley is a proud Nevada native - she was born and raised in Las Vegas and attended University of Nevada Reno, where she met Patrick through mutual friends. Her mom knew that it was true love when she told her that her "friend" Patrick had brought her toilet paper when she was sick. They began dating and she taught him everything he knows about cooking burgers. After completing her degree and starting out her career as a lab analyst for clinical trials, she agreed that it was best for the pair to relocate back to Vegas to be closer to friends and family. Ashley currently works in the biotechnology field, and in her free time greatly enjoys cooking, gaming, and programming.
+                </p>
+                <h1>The Groom</h1>
+                <div class="slider">
+                    <div><img src="media/aboutus/p/IMG_2784.jpg"></div>
+                    <div><img src="media/aboutus/p/IMG_1711.jpg"></div>
+                    <div><img src="media/aboutus/p/patrick_ino.JPG"></div>
+                </div>
+                <p class="content_paragraph">
+                    Patrick grew up in California and Florida before calling Las Vegas home. From there, he made his way to Reno where he and Ashley met over the flaming hot flat top of In-N-Out Burger. Patrick, being the major outdoors enthusiast he is, was heartbroken to leave the north and return to Vegas where he began his career in digital advertising. In his free time, Patrick enjoys playing golf, watching Formula 1, and gaming alongside Ashley.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p>Web design and development by Ashley Federwisch<br>
+            Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
+            Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
+        </footer>
+    </div>
+</body>
+</html>
