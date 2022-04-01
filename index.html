@@ -21,21 +21,7 @@
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-    <script>
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            captions: true,
-            adaptiveHeight: true,
-            preloadImages: "all",
-            slideWidth: 320
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <header>
@@ -77,11 +63,26 @@
                 <div><img src="images/2022_Knights Game.jpg" title="March 2022 - Golden Knights Game"></div>
             </div>
         </div>
+
         <footer>
             <p>Web design and development by Ashley Federwisch<br>
             Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
             Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
         </footer>
     </div>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: true,
+            adaptiveHeight: true,
+            preloadImages: "all",
+            slideWidth: 320
+            });
+        });
+    </script>    
 </body>
 </html>

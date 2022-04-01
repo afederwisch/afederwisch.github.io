@@ -23,20 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" ></script>  
-    <script>
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            captions: false,
-            adaptiveHeight: true,
-            preloadImages: "all",
-            slideWidth: 320
-            });
-        });
-    </script>
+
 
 </head>
 <body>
@@ -85,6 +72,19 @@
             Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
         </footer>
     </div>
-
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: false,
+            adaptiveHeight: true,
+            preloadImages: "all",
+            slideWidth: 320
+            });
+        });
+    </script>
 </body>
 </html>
