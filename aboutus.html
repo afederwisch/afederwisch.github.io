@@ -8,21 +8,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
         @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-    <script>
-        $(document).ready(function(){
-          $('.slider').bxSlider({
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            captions: false,
-            slideWidth: 320
-          });
-        });
-      </script>
     <script>
         function openNav () {
             let x = document.getElementById("nav");
@@ -35,7 +20,6 @@
         }
     </script>
 </head>
-
 <body>
     <header>
         <div class="title_card"><img src="media/TITLE_CARD.png"></div>
@@ -82,5 +66,20 @@
             Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
         </footer>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: false,
+            slideWidth: 320
+          });
+        });
+      </script>
 </body>
 </html>
