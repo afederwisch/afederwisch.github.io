@@ -4,10 +4,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hutton // Federwisch Wedding - About Us</title>
     <link href="index.css" rel="stylesheet">
+    <link rel="preload" as="image" href="media/aboutus/a/me_now.png">
+    <link rel="preload" as="image" href="media/aboutus/a/lil_me.png">
+    <link rel="preload" as="image" href="media/aboutus/a/ash_ino.png">
+    <link rel="preload" as="image" href="media/aboutus/p/p_now.png">
+    <link rel="preload" as="image" href="media/aboutus/p/p_then.png">
+    <link rel="preload" as="image" href="media/aboutus/p/patrick_ino.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
         @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
     </style>
+    <script>
+        function preloadImage(url)
+            {
+                let img = new Image();
+                img.src = url;
+            }
+    </script>
     <script>
         function openNav () {
             let x = document.getElementById("nav");
@@ -19,6 +32,22 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: false,
+            slideWidth: 320
+            });
+        });
+    </script>
+
 </head>
 <body>
     <header>
@@ -66,20 +95,6 @@
             Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
         </footer>
     </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-    <script>
-        $(document).ready(function(){
-          $('.slider').bxSlider({
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            captions: false,
-            slideWidth: 320
-          });
-        });
-      </script>
+
 </body>
 </html>
