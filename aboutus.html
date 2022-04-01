@@ -1,26 +1,14 @@
 <!doctype HTML>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hutton // Federwisch Wedding - About Us</title>
     <link href="css/index.css" rel="stylesheet">
-    <link rel="preload" as="image" href="images/me_now.png">
-    <link rel="preload" as="image" href="images/lil_me.png">
-    <link rel="preload" as="image" href="images/ash_ino.png">
-    <link rel="preload" as="image" href="images/p_now.png">
-    <link rel="preload" as="image" href="images/p_then.png">
-    <link rel="preload" as="image" href="images/patrick_ino.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
         @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
     </style>
-    <script>
-        function preloadImage(url)
-            {
-                let img = new Image();
-                img.src = url;
-            }
-    </script>
     <script>
         function openNav () {
             let x = document.getElementById("nav");
@@ -33,8 +21,8 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" ></script>  
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider({
@@ -43,6 +31,7 @@
             stopAutoOnClick: true,
             pager: true,
             captions: false,
+            preloadImages: all,
             slideWidth: 320
             });
         });
