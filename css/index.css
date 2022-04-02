@@ -63,8 +63,6 @@ h3 {
     margin:15px;
 }
 
-
-
 .content_paragraph {
     margin:15px;
     text-align: justify;
@@ -166,11 +164,15 @@ strong {
     nav.responsive a.close_menu_icon {
         position:fixed;
         right: 8px;
-        /* top: 0; */
         color: whitesmoke;
         font-size: 20px;
     }
 
+}
+
+.active {
+    background-color: #b1bca0;
+    color: whitesmoke; 
 }
 
 .container {
@@ -201,10 +203,64 @@ strong {
     text-align: center;
 }
 
-.bx-wrapper {
-    display: table;
-    margin: 0 auto;
+.slider {
+    max-width: 400px;
+    max-height: 1200px;
+    position: relative;
+    margin: auto;
   }
+
+.slideshow_1_default, .slideshow_2_default {
+    display:none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 14px;
+    color: whitesmoke;
+    background-color: #592623;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 10%;
+    user-select: none;
+  }
+
+@media screen and (max-width: 480px) {
+    .prev, .next {
+        bottom:5px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .prev, .next {
+        top: 50%;
+        margin-left:-80px;
+        margin-right:-80px;
+    }
+}
+
+.next {
+    right: 0;
+    border-radius: 10%;
+}
+
+.prev:hover, .next:hover {
+    background-color: #b1bca0;
+    border-radius: 50%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
 
 footer {
     font-size: 12px;
