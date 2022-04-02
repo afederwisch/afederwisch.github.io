@@ -22,8 +22,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+            auto: true,
+            autoControls: true,
+            stopAutoOnClick: true,
+            pager: true,
+            captions: true,
+            adaptiveHeight: true,
+            preloadImages: "all",
+            slideWidth: 320
+            });
+        });
+    </script>   
 </head>
 <body>
+    <script>reloadSlider();</script>
     <header>
         <div class="title_card"><img src="images/TITLE_CARD.png"></div>
     </header>
@@ -50,6 +65,7 @@
                 </p>
             </div>
             <div class="slider">
+
                 <div><img src="images/2014_Halloween.JPG" title="Halloween 2014"></div>
                 <div><img src="images/2015_Disney.JPG" title="July 2015 - Disneyland Trip"></div>
                 <div><img src="images/2016_SF.JPG" title="San Francisco Trip - 2016"></div>
@@ -62,6 +78,7 @@
                 <div><img src="images/2021_Patricks Bday.JPG" title="December 2021 - Patrick's 28th Birthday"></div>
                 <div><img src="images/2022_Knights Game.jpg" title="March 2022 - Golden Knights Game"></div>
             </div>
+            <script>reloadSlider();</script>
         </div>
 
         <footer>
@@ -69,20 +86,6 @@
             Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
             Image slideshow by <a class="link" href="https://bxslider.com/">bxSlider</a>
         </footer>
-    </div>
-    <script>
-        $(document).ready(function(){
-            $('.slider').bxSlider({
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            captions: true,
-            adaptiveHeight: true,
-            preloadImages: "all",
-            slideWidth: 320
-            });
-        });
-    </script>    
+    </div> 
 </body>
 </html>
