@@ -24,7 +24,7 @@ header {
 
 a.link {
     color:#592623;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a.link:hover {
@@ -55,23 +55,27 @@ nav a {
 }
 
 h1 {
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Send Flowers', sans-serif;
     color:#592623;
-    margin:18px;
+    margin:10px;
     font-size: 90px;
     text-align: center;
 }
 
-.subheading {
-    align-items: right;
-}
-
 h2 {
-    margin:15px;
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    text-align: center;
 }
 
 h3 {
-    margin:15px;
+    text-transform: lowercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    text-align: center;
+    color:#592623;
 }
 
 .content_paragraph {
@@ -79,11 +83,16 @@ h3 {
     text-align: justify;
     padding:10px;
     font-size: 22px;
-    color:#592623
+    color:black
 }
 
-strong {
-    color:#592623;
+.content_sub_paragraph {
+    margin:15px;
+    text-align: center;
+    padding:10px;
+    font-size: 22px;
+    color:lightslategray;
+    letter-spacing: 2px;
 }
 
 @media screen and (min-width: 631px) {
@@ -94,6 +103,7 @@ strong {
         margin: 10px;
         padding: 5px;
     }
+
     .nav_items {
         font-size:25px;
         padding:0;
@@ -126,7 +136,15 @@ strong {
 
 @media screen and (max-width: 630px) {
     h1 {
-        font-size: 28px;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .content_sub_paragraph {
+        font-size:14px;
     }
 
     footer {
@@ -180,7 +198,7 @@ strong {
     }
 
     nav.responsive a.close_menu_icon {
-        position:fixed;
+        position: fixed;
         right: 8px;
         color: whitesmoke;
         font-size: 20px;
@@ -213,11 +231,6 @@ strong {
 
 .content_container {
     flex-direction: row;
-}
-
-.text {
-    padding: 0 auto;
-    text-align: center;
 }
 
 .slider {
@@ -263,6 +276,68 @@ strong {
 .prev:hover, .next:hover {
     background-color: #b1bca0;
     border-radius: 50%;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (max-width:999px) {
+    iframe {
+        display:none;
+    }
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+
+}
+
+input {
+    width:50%;
+    display:block;
+    height: 40px;
+    margin:20px auto;
+}
+
+button {
+    width:fit-content;
+    display:block;
+    margin:20px auto;
+    padding: 15px 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #592623;
+    letter-spacing: 3px;
+    border: 2px solid #592623;
+    border-radius: 5%;
+    background-color: whitesmoke;
+}
+
+.radioz {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+}
+
+.oneradio {
+    display: block;
+}
+
+#yn {
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+.selector {
+    margin:auto 10px;
+    text-align: center;
+    color:lightslategray;
+    font-weight: bold;
 }
 
 footer {
