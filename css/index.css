@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sacramento&display=swap');
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -14,12 +16,16 @@ body {
 
 img {
     width:100%;
-    border-radius: 5%;
+    border-radius: 20px;
 
 }
 
+img.header-image {
+    border-radius: 0;
+}
+
 header {
-    background-color: #592623;
+    background-color:#592623;
 }
 
 a.link {
@@ -55,9 +61,9 @@ nav a {
 }
 
 h1 {
-    font-family: 'Send Flowers', sans-serif;
+    font-family: 'Sacramento', sans-serif;
     color:#592623;
-    margin:10px;
+    margin-top:10px;
     font-size: 90px;
     text-align: center;
 }
@@ -132,6 +138,11 @@ h3 {
     nav .close_menu_icon {
         display: none;
     }
+
+    .slider {
+        border-radius: 20px;
+    }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -168,7 +179,8 @@ h3 {
     nav a.menu_icon {
         font-size: 25px;
         display:inline-flex;
-        padding: 5px;
+        padding-left: 5px;
+        padding-bottom: 10px;
         align-items: left;
     }
 
@@ -190,7 +202,7 @@ h3 {
 
     nav.responsive i {
         text-align: center;
-        padding: 5px 0 0 0;
+
     }
 
     nav.responsive .nav_items {
@@ -198,12 +210,16 @@ h3 {
     }
 
     nav.responsive a.close_menu_icon {
-        position: fixed;
-        right: 8px;
+        position: absolute;
+        right: 3px;
         color: whitesmoke;
         font-size: 20px;
+        padding-top: 12px;
     }
 
+    .slider {
+        border-radius: 0%;
+    }
 }
 
 .active {
@@ -212,11 +228,11 @@ h3 {
 }
 
 .title_card {
-    max-width: 600px;
+    width:100%;
     flex-shrink: 1; 
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 10px;
+    margin:0;
+    padding: 0;
+    border-color: #592623;
 }
 
 .container {
@@ -239,7 +255,6 @@ h3 {
     position: relative;
     margin: auto;
     border:#592623 10px solid;
-    border-radius: 5%;
     background-color:#592623;
 }
 
@@ -254,28 +269,34 @@ h3 {
 }
 
 .prev, .next {
+    line-height: 100%;
     cursor: pointer;
     position: absolute;
     width: auto;
-    padding: 12px;
+    padding: 10px 10px 10px 6px;
     color: whitesmoke;
     background-color: #592623;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 10% 10% 0;
+    border-radius: 0 15px 15px 0;
     user-select: none;
     top: 50%;
+    border:#592623 2px solid;
   }
 
 .next {
     right: 0;
-    border-radius: 10% 0 0 10%;
+    border-radius: 15px 0 0 15px;
+    padding: 10px 6px 10px 10px;
 }
 
 .prev:hover, .next:hover {
-    background-color: #b1bca0;
-    border-radius: 50%;
+    background-color:whitesmoke;
+    color:#592623;
+    border-radius: 70px;
+    padding: 10px 14px;
+    margin:0 5px;
 }
 
 iframe {
@@ -296,10 +317,12 @@ form {
 }
 
 input {
-    width:50%;
+    width:70%;
     display:block;
-    height: 40px;
+    height: 50px;
     margin:20px auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
 }
 
 button {
@@ -313,8 +336,19 @@ button {
     color: #592623;
     letter-spacing: 3px;
     border: 2px solid #592623;
-    border-radius: 5%;
+    border-radius: 20px;
     background-color: whitesmoke;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #592623;
+    color:whitesmoke;
+    -webkit-transition: all 750ms ease;
+    -moz-transition: all 750ms ease;
+    -ms-transition: all 750ms ease;
+    -o-transition: all 750ms ease;
+    transition: all 750ms ease;
 }
 
 .radioz {
@@ -322,6 +356,7 @@ button {
     flex-direction: row;
     justify-content: center;
     margin:auto;
+    
 }
 
 .oneradio {
@@ -331,6 +366,7 @@ button {
 #yn {
     margin-bottom:0;
     margin-top: 0;
+    cursor: pointer;
 }
 
 .selector {

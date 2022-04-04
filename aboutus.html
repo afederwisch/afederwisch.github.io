@@ -3,67 +3,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hutton // Federwisch Wedding - About Us</title>
     <link href="css/index.css" rel="stylesheet">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins:wght@300&family=Raleway:wght@300&family=Send+Flowers&display=swap');
-        @import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
-    </style>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/af5541f3df.js" crossorigin="anonymous"></script>
+    <title>Hutton // Federwisch Wedding - About Us</title>
 </head>
 <body>
     <header>
-        <div class="title_card"><img src="images/TITLE_CARD.png"></div>
+        <div class="title_card"><img class="header-image" src="images/HEADER.jpg"></div>
     </header>
     <nav class="nav" id="nav">
-        <a href="index.html"><i class="fi fi-rs-home"></i><br><p class="nav_items">Home</p></a>    
-        <a class="active" href="#"><i class="fi fi-rs-rings-wedding"></i><br><p class="nav_items">About Us</p></a>
-        <a href="eventinfo.html"><i class="fi fi-rs-info"></i><br><p class="nav_items">Event Info</p></a>
-        <a href="rsvp.html"><i class="fi fi-rs-envelope-plus"></i><br><p class="nav_items">RSVP</p></a>
-        <a href="registry.html"><i class="fi fi-rs-gift"></i><br><p class="nav_items">Registry</p></a>
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i><br><p class="nav_items">Home</p></a>    
+        <a class="active" href="aboutus.html"><i class="fa-solid fa-heart"></i><br><p class="nav_items">About Us</p></a>
+        <a href="eventinfo.html"><i class="fa-solid fa-circle-info"></i><br><p class="nav_items">Event Info</p></a>
+        <a href="rsvp.html"><i class="fa-solid fa-paper-plane"></i><br><p class="nav_items">RSVP</p></a>
+        <a href="registry.html"><i class="fa-solid fa-gift"></i><br><p class="nav_items">Registry</p></a>
         <a href="javascript:void(0);" class="menu_icon" onclick="openNav()">
-            <i class="fi fi-rs-list"></i>
+            <i class="fa-solid fa-bars fa-fw"></i>
           </a>
           <a href="javascript:void(0);" class="close_menu_icon" onclick="openNav()">
-            <i class="fi fi-rs-cross-circle"></i>
+            <i class="fa-solid fa-xmark"></i>
           </a>
     </nav>
     <div class="container">
         <div class="content_container">
             <h1>The Bride</h1>
             <h2>Ashley Federwisch</h2>
-            <div class="content slider">
-                <div class="slideshow_1_default"><img src="images/me_now.png"></div>
-                <div class="slideshow_1_default"><img src="images/lil_me.png"></div>
-                <div class="slideshow_1_default"><img src="images/ash_ino.png"></div>
-                <a class="prev" onclick="plusSlides(-1,0)"><i class="fi fi-rs-arrow-circle-left"></i></a>
-                <a class="next" onclick="plusSlides(1,0)"><i class="fi fi-rs-arrow-circle-right"></i></a>
-            </div>
             <div class="content text">
                 <p class="content_paragraph">
                     Ashley is a proud Nevada native - she was born and raised in Las Vegas and attended University of Nevada Reno, where she met Patrick through mutual friends. Her mom knew that it was true love when she told her that her "friend" Patrick had brought her toilet paper when she was sick. They began dating and she taught him everything he knows about cooking burgers. After completing her degree and starting out her career as a lab analyst for clinical trials, she agreed that it was best for the pair to relocate back to Vegas to be closer to friends and family. Ashley currently works in the biotechnology field, and in her free time greatly enjoys cooking, gaming, and programming.
                 </p>
             </div>
+            <div class="content slider">
+                <div class="slideshow_1_default"><img src="images/me_now.png"></div>
+                <div class="slideshow_1_default"><img src="images/lil_me.png"></div>
+                <div class="slideshow_1_default"><img src="images/ash_ino.png"></div>
+                <a class="prev" onclick="plusSlides(-1,0)"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="next" onclick="plusSlides(1,0)"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+
         </div>
         <div class="content_container">
             <h1>The Groom</h1>
             <h2>Patrick Hutton</h2>
-            <div class="content slider">
-                <div class="slideshow_2_default"><img src="images/p_now.png"></div>
-                <div class="slideshow_2_default"><img src="images/p_then.png"></div>
-                <div class="slideshow_2_default"><img src="images/patrick_ino.png"></div>
-                <a class="prev" onclick="plusSlides(-1,1)"><i class="fi fi-rs-arrow-circle-left"></i></a>
-                <a class="next" onclick="plusSlides(1,1)"><i class="fi fi-rs-arrow-circle-right"></i></a>
-            </div>
             <div class="content text">
                 <p class="content_paragraph">
                     Patrick grew up in California and Florida before calling Las Vegas home. From there, he made his way to Reno where he and Ashley met over the flaming hot flat top of In-N-Out Burger. Patrick, being the major outdoors enthusiast he is, was heartbroken to leave the north and return to Vegas where he began his career in digital advertising. In his free time, Patrick enjoys playing golf, watching Formula 1, and gaming alongside Ashley.
                 </p>
             </div>
+            <div class="content slider">
+                <div class="slideshow_2_default"><img src="images/p_now.png"></div>
+                <div class="slideshow_2_default"><img src="images/p_then.png"></div>
+                <div class="slideshow_2_default"><img src="images/patrick_ino.png"></div>
+                <a class="prev" onclick="plusSlides(-1,1)"><i class="fa-solid fa-angle-left"></i></a>
+                <a class="next" onclick="plusSlides(1,1)"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+
         </div>
         <footer>
             <p>Web design and development by Ashley Federwisch<br>
-            Uicons by <a class="link" href="https://www.flaticon.com/uicons">Flaticon</a><br>
             Background created by <a class="link" href='https://www.freepik.com/vectors/background'>visnezh - www.freepik.com</a>
         </footer>
     </div>
