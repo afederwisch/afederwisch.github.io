@@ -101,6 +101,8 @@ h3 {
     letter-spacing: 2px;
 }
 
+
+
 @media screen and (min-width: 631px) {
     nav a {
         width: 210px;
@@ -148,6 +150,7 @@ h3 {
 @media screen and (max-width: 630px) {
     h1 {
         font-size: 40px;
+        letter-spacing:normal;
     }
 
     h2 {
@@ -222,6 +225,13 @@ h3 {
     }
 }
 
+@media screen and (max-width: 968px) {
+    .nav_items {
+        font-size: 16px;
+    }
+}
+
+
 .active {
     background-color: #b1bca0;
     color: whitesmoke; 
@@ -243,6 +253,24 @@ h3 {
     max-width: 70%;
     background-color: whitesmoke;
     margin:auto;
+}
+
+@media screen and (max-width: 1640px) {
+    .container {
+        max-width:80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width:90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        max-width:100%;
+    }
 }
 
 .content_container {
