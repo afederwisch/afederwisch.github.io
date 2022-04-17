@@ -143,6 +143,11 @@ h3 {
         border-radius: 20px;
     }
 
+    
+    footer {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -402,10 +407,6 @@ button:hover {
     font-weight: bold;
 }
 
-footer {
-    font-size: 15px;
-    margin: 15px 0 0 2px;
-}
 .countdown-timer {
     font-size:40px;
     text-transform: uppercase;
@@ -439,4 +440,8 @@ footer {
     .countdown-header {
         font-size: 16px;
     }
+}
+
+footer {
+    margin: 15px 0 0 2px;
 }
