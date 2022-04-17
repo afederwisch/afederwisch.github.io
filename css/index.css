@@ -9,7 +9,6 @@
 body {
     background-color: whitesmoke;
     font-family: 'Poppins', sans-serif;
-
     background-image: url("../images/background_green.jpg");
     background-size: 900px;
 }
@@ -17,7 +16,6 @@ body {
 img {
     width:100%;
     border-radius: 20px;
-
 }
 
 img.header-image {
@@ -34,7 +32,7 @@ a.link {
 }
 
 a.link:hover {
-    color:#b1bca0;
+    color:#708090;
     text-decoration: underline;
     -webkit-transition: all 750ms ease;
     -moz-transition: all 750ms ease;
@@ -251,7 +249,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 70%;
-    background-color: whitesmoke;
+    background: rgba(245, 245, 245, .75);
     margin:auto;
 }
 
@@ -333,7 +331,7 @@ iframe {
 }
 
 @media screen and (max-width:999px) {
-    iframe {
+    .map {
         display:none;
     }
 }
@@ -405,6 +403,40 @@ button:hover {
 }
 
 footer {
-    font-size: 12px;
+    font-size: 15px;
     margin: 15px 0 0 2px;
+}
+.countdown-timer {
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    text-align: center;
+    color:#708090;
+}
+
+.countdown-header {
+    font-family: 'Poppins', sans-serif;
+    color:#592623;
+    text-transform: none;
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:733px) {
+    .countdown-timer {
+        font-size:28px;
+    }
+    
+    .countdown-header {
+        font-size: 250px;
+    }
+}
+
+@media screen and (max-width:604px) {
+    
+    .countdown-header {
+        font-size: 16px;
+    }
 }
